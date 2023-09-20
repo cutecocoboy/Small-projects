@@ -4,20 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Show Password</title>
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
     <div class="con">
-      <h1>let's see the password on click</h1>
-      <form action="#">
+      <h1>Let's see the Password on Click</h1>
+      <form class="form" action="#">
         <label for="password">
-          Enter Password:
-          <div class="pass">
-            <input type="text" name="password" id="password">
-            
-          </div>
-
+          <p>Enter Password</p>
         </label>
+        <div class="pass">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+          />
+          <div class="icon">
+            <img class="eye" src="./close-eye.png" alt="show password" />
+          </div>
+        </div>
       </form>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
